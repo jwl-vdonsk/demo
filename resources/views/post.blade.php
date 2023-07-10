@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-
-<title>My Blog</title>
-<link rel="stylesheet" href="/app.css">
-
-<body>
+<x-layout>
     <article>
         <h1>
-            <?= $post->title; ?>
+            {!! $post->title !!}
         </h1>
         <div>
-            <?= $post->body; ?>
+            {!! $post->body !!}
         </div>
     </article>
     <p>
         <a href="/">Go back</a>
     </p>
-</body>
+</x-layout>
