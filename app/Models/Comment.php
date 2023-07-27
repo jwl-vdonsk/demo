@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     use HasFactory;
+
     public function post() //column name probably: post_id
     {
         return $this->belongsTo(Post::class);
